@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Billy Galloway
+  description: Get available ip from phpipam and reserve returned ip address
+
+  license: license GPLv3
+  min_ansible_version: 2.x
+
+  platforms: []
+  
+  galaxy_tags:
+    - phpipam
+    - api 
+
+  dependencies: []

@@ -1,11 +1,11 @@
 # phpipam 
 ipam:
-  app_id: phpipamappid
-  api_user: rest_user
-  api_pass: !vault | 
-    { vault encrypted password }
-  token_request: https://ipam.example.com/api/mlphpipam/user/
-  available_ip: https://ipam.example.com/api/mlphpipam/addresses/first_free/
+  app_id: phpipamappid # The name you entered for the app id
+  api_user: rest_user  # API user created 
+  api_pass: # !vault | 
+            # { vault encrypted hash here }
+  token_request: https://ipam.example.com/api/mlphpipam/user/ # Change the URL to match your install
+  available_ip: https://ipam.example.com/api/mlphpipam/addresses/first_free/ 
   register_ip: https://ipam.example.com/api/mlphpipam/addresses/
   description: ansible created
-  subnet_id: 57
+  subnet_id: #This value represents the subnet 

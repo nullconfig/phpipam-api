@@ -1,8 +1,8 @@
 ---
 # Using the URI module this playbook
 # will make a call to the phpipam application
-# register a token to the output variable inside
-# the playbook. 
+# and register a token to the output 
+# variable inside the playbook. 
 # 
 # That variable is then used to map the token variable
 # inside of group_vars/all

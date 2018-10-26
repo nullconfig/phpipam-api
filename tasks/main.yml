@@ -4,8 +4,13 @@
 # and register a token to the output 
 # variable inside the playbook. 
 # 
-# That variable is then used to map the token variable
-# inside of group_vars/all
+# The token is then used to authenticate
+# make a request for next available ip 
+# and reserve this ip. 
+#
+# You can then successfully pass that variable
+# to other plays if grouping roles together.
+#
 #
 - name: Gathering ipam auth token
   uri:

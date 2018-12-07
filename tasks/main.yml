@@ -25,14 +25,14 @@
 - name: checking subnet for next available ip address
   uri:
     validate_certs: false
-    url: "{{ ipam.available_ip }}{{ subnet_id | int }}"
+    url: "{{ ipam.available_ip }}{{ ipam.subnet_id | int }}"
     headers: token="{{ output.json.data.token }}"
   register: ip_address
 
 - name: reserve ip address
   uri:
     validate_certs: false
-    url: "{{ ipam.available_ip }}{{ subnet_id | int }}"
+    url: "{{ ipam.available_ip }}{{ ipam.subnet_id | int }}"
     method: POST
     headers: 
       token: "{{ output.json.data.token }}"

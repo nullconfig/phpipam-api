@@ -28,7 +28,7 @@ This will list all of the subents in this section, and you'll want to grab the i
 This is where the `subnet_id:` variable is populated. 
 
 ### Reserve IP example Playbook
-reserve_ip.yml playbook is an example of using the URI module
+main.yml playbook is an example of using the URI module
 to make an api call, register the output to populate variables,
 making calls to register an ip, and update phpipam's database. 
 

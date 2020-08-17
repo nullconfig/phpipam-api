@@ -18,7 +18,7 @@ grabbing the token from the returned json output:
 `curl -k https://ipam.example.com/api/phpipamappid/sections/ --header "token: .J1e9ipFZkPE6EvIRAqEf9hp" -X GET `
 
 Once you have the ID of the sections this can be used to get the subnets inside this section. 
-`curl -k https://ipam.example.com/api/phpipamappid/sections/{ID}/ --header "token: .J1e9ipFZkPE6EvIRAqEf9hp" -X GET `
+`curl -k https://ipam.example.com/api/phpipamappid/sections/{ID}/subnets --header "token: .J1e9ipFZkPE6EvIRAqEf9hp" -X GET `
 
 This will list all of the subents in this section, and you'll want to grab the id from the returned objects
 ``` "data": {

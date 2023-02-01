@@ -17,6 +17,8 @@
     validate_certs: false
     url: "{{ ipam.token_request }}"
     method: POST
+    headers: 
+      Content-Type: application/json
     user: "{{ ipam.api_user }}"
     password: "{{ ipam.api_pass | trim }}"
     force_basic_auth: yes
@@ -26,7 +28,9 @@
   uri:
     validate_certs: false
     url: "{{ ipam.available_ip }}{{ ipam.subnet_id | int }}"
-    headers: token="{{ output.json.data.token }}"
+    headers:
+      token: "{{ output.json.data.token }}"
+      Content-Type: application/json
   register: ip_address
 
 - name: reserve ip address
